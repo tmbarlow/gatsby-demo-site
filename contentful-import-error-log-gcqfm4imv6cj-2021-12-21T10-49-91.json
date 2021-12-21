@@ -1,0 +1,1009 @@
+[
+  {
+    "ts": "2021-12-21T15:50:00.763Z",
+    "level": "error",
+    "error": {
+      "name": "BadRequest",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "28p9vvm1oxuw"
+            }
+          },
+          "id": "blogPost",
+          "type": "ContentType",
+          "createdAt": "2017-05-11T12:17:42.862Z",
+          "updatedAt": "2017-05-17T10:55:24.031Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "066RqBikAjzKy0SWUEtFvH"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "066RqBikAjzKy0SWUEtFvH"
+            }
+          },
+          "publishedCounter": 6,
+          "version": 12,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "066RqBikAjzKy0SWUEtFvH"
+            }
+          },
+          "publishedVersion": 11,
+          "firstPublishedAt": "2017-05-11T12:17:43.175Z",
+          "publishedAt": "2017-05-17T10:55:24.004Z"
+        },
+        "displayField": "title",
+        "name": "Blog Post",
+        "description": "",
+        "fields": [
+          {
+            "id": "title",
+            "name": "Title",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "slug",
+            "name": "Slug",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "heroImage",
+            "name": "Hero Image",
+            "type": "Link",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false,
+            "linkType": "Asset"
+          },
+          {
+            "id": "description",
+            "name": "Description",
+            "type": "Text",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "body",
+            "name": "Body",
+            "type": "Text",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "author",
+            "name": "Author",
+            "type": "Link",
+            "localized": false,
+            "required": false,
+            "validations": [
+              {
+                "linkContentType": [
+                  "person"
+                ]
+              }
+            ],
+            "disabled": false,
+            "omitted": false,
+            "linkType": "Entry"
+          },
+          {
+            "id": "publishDate",
+            "name": "Publish Date",
+            "type": "Date",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "tags",
+            "name": "Tags",
+            "type": "Array",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false,
+            "items": {
+              "type": "Symbol",
+              "validations": [
+                {
+                  "in": [
+                    "general",
+                    "javascript",
+                    "static-sites"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "data": {
+        "status": 400,
+        "statusText": "Bad Request",
+        "message": "You need to omit a field before deleting it",
+        "details": {
+          "errors": [
+            {
+              "message": "Field needs to be omitted",
+              "path": [
+                "fields",
+                "image"
+              ]
+            }
+          ],
+          "contentType": {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "gcqfm4imv6cj"
+                }
+              },
+              "id": "blogPost",
+              "type": "ContentType",
+              "createdAt": "2021-12-08T19:31:47.310Z",
+              "updatedAt": "2021-12-14T20:37:05.648Z",
+              "environment": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Environment",
+                  "id": "b3ede121-d0cc-4523-8f0d-9097f0681ede"
+                }
+              },
+              "revision": 4
+            },
+            "displayField": "zclc",
+            "name": "Blog Post",
+            "description": "",
+            "assembly": false,
+            "fields": [
+              {
+                "id": "zclc",
+                "apiName": "title",
+                "name": "Title",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "fupr",
+                "apiName": "slug",
+                "name": "Slug",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "oylv",
+                "apiName": "heroImage",
+                "name": "Hero Image",
+                "type": "Link",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "linkType": "Asset"
+              },
+              {
+                "id": "dstl",
+                "apiName": "description",
+                "name": "Description",
+                "type": "Text",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "welp",
+                "apiName": "body",
+                "name": "Body",
+                "type": "Text",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "tdkc",
+                "apiName": "author",
+                "name": "Author",
+                "type": "Link",
+                "localized": false,
+                "required": false,
+                "validations": [
+                  {
+                    "linkContentType": [
+                      "person"
+                    ]
+                  }
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "linkType": "Entry"
+              },
+              {
+                "id": "rznq",
+                "apiName": "publishDate",
+                "name": "Publish Date",
+                "type": "Date",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "wcfo",
+                "apiName": "tags",
+                "name": "Tags",
+                "type": "Array",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "items": {
+                  "type": "Symbol",
+                  "validations": [
+                    {
+                      "in": [
+                        "general",
+                        "javascript",
+                        "static-sites"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "zg8jDJVIhd59V5In",
+                "apiName": "image",
+                "name": "image",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              }
+            ]
+          }
+        },
+        "request": {
+          "url": "/spaces/gcqfm4imv6cj/environments/master/content_types/blogPost",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "Authorization": "Bearer ...t704k",
+            "user-agent": "node.js/v16.13.1",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 8,
+            "X-Contentful-User-Agent": "app contentful.import/7.9.42; feature library-import; sdk contentful-management.js/7.42.1; platform node.js/v16.13.1; os macOS/21.2.0;",
+            "Content-Length": 1289
+          },
+          "method": "put",
+          "payloadData": "{\"displayField\":\"title\",\"name\":\"Blog Post\",\"description\":\"\",\"fields\":[{\"id\":\"title\",\"name\":\"Title\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"slug\",\"name\":\"Slug\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"heroImage\",\"name\":\"Hero Image\",\"type\":\"Link\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false,\"linkType\":\"Asset\"},{\"id\":\"description\",\"name\":\"Description\",\"type\":\"Text\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"body\",\"name\":\"Body\",\"type\":\"Text\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"author\",\"name\":\"Author\",\"type\":\"Link\",\"localized\":false,\"required\":false,\"validations\":[{\"linkContentType\":[\"person\"]}],\"disabled\":false,\"omitted\":false,\"linkType\":\"Entry\"},{\"id\":\"publishDate\",\"name\":\"Publish Date\",\"type\":\"Date\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"tags\",\"name\":\"Tags\",\"type\":\"Array\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false,\"items\":{\"type\":\"Symbol\",\"validations\":[{\"in\":[\"general\",\"javascript\",\"static-sites\"]}]}}]}"
+        },
+        "requestId": "5cae3b87-2235-41fa-8fa4-e30733fac39a"
+      }
+    }
+  },
+  {
+    "ts": "2021-12-21T15:50:00.778Z",
+    "level": "error",
+    "error": {
+      "name": "BadRequest",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "28p9vvm1oxuw"
+            }
+          },
+          "id": "person",
+          "type": "ContentType",
+          "createdAt": "2017-05-11T12:04:23.540Z",
+          "updatedAt": "2017-05-18T14:04:51.650Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "066RqBikAjzKy0SWUEtFvH"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "2AAFsI4st4sZPlF1LFT13q"
+            }
+          },
+          "publishedCounter": 7,
+          "version": 14,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "2AAFsI4st4sZPlF1LFT13q"
+            }
+          },
+          "publishedVersion": 13,
+          "firstPublishedAt": "2017-05-11T12:04:23.869Z",
+          "publishedAt": "2017-05-18T14:04:51.628Z"
+        },
+        "displayField": "name",
+        "name": "Person",
+        "description": "",
+        "fields": [
+          {
+            "id": "name",
+            "name": "Name",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "title",
+            "name": "Title",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "company",
+            "name": "Company",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "shortBio",
+            "name": "Short Bio",
+            "type": "Text",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "email",
+            "name": "Email",
+            "type": "Symbol",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "phone",
+            "name": "Phone",
+            "type": "Symbol",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "facebook",
+            "name": "Facebook",
+            "type": "Symbol",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "twitter",
+            "name": "Twitter",
+            "type": "Symbol",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "github",
+            "name": "Github",
+            "type": "Symbol",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "image",
+            "name": "Image",
+            "type": "Link",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false,
+            "linkType": "Asset"
+          }
+        ]
+      },
+      "data": {
+        "status": 400,
+        "statusText": "Bad Request",
+        "message": "You need to omit a field before deleting it",
+        "details": {
+          "errors": [
+            {
+              "message": "Field needs to be omitted",
+              "path": [
+                "fields",
+                "expertise"
+              ]
+            }
+          ],
+          "contentType": {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "gcqfm4imv6cj"
+                }
+              },
+              "id": "person",
+              "type": "ContentType",
+              "createdAt": "2021-12-08T19:31:46.779Z",
+              "updatedAt": "2021-12-17T14:46:23.750Z",
+              "environment": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Environment",
+                  "id": "b3ede121-d0cc-4523-8f0d-9097f0681ede"
+                }
+              },
+              "revision": 4
+            },
+            "displayField": "mfku",
+            "name": "Person",
+            "description": "",
+            "assembly": false,
+            "fields": [
+              {
+                "id": "mfku",
+                "apiName": "name",
+                "name": "Name",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "esno",
+                "apiName": "title",
+                "name": "Title",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "vyuo",
+                "apiName": "company",
+                "name": "Company",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "ztpm",
+                "apiName": "shortBio",
+                "name": "Short Bio",
+                "type": "Text",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "hbrw",
+                "apiName": "email",
+                "name": "Email",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "hmra",
+                "apiName": "phone",
+                "name": "Phone",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "cwsh",
+                "apiName": "facebook",
+                "name": "Facebook",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "wmvl",
+                "apiName": "twitter",
+                "name": "Twitter",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "qoge",
+                "apiName": "github",
+                "name": "Github",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "tqtk",
+                "apiName": "image",
+                "name": "Image",
+                "type": "Link",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "linkType": "Asset"
+              },
+              {
+                "id": "YPqEkKIpfnMf2XdG",
+                "apiName": "expertise",
+                "name": "Expertise",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                  {
+                    "in": [
+                      "Crypto",
+                      "IRA"
+                    ]
+                  }
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              }
+            ]
+          }
+        },
+        "request": {
+          "url": "/spaces/gcqfm4imv6cj/environments/master/content_types/person",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "Authorization": "Bearer ...t704k",
+            "user-agent": "node.js/v16.13.1",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 8,
+            "X-Contentful-User-Agent": "app contentful.import/7.9.42; feature library-import; sdk contentful-management.js/7.42.1; platform node.js/v16.13.1; os macOS/21.2.0;",
+            "Content-Length": 1409
+          },
+          "method": "put",
+          "payloadData": "{\"displayField\":\"name\",\"name\":\"Person\",\"description\":\"\",\"fields\":[{\"id\":\"name\",\"name\":\"Name\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"title\",\"name\":\"Title\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"company\",\"name\":\"Company\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"shortBio\",\"name\":\"Short Bio\",\"type\":\"Text\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"email\",\"name\":\"Email\",\"type\":\"Symbol\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"phone\",\"name\":\"Phone\",\"type\":\"Symbol\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"facebook\",\"name\":\"Facebook\",\"type\":\"Symbol\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"twitter\",\"name\":\"Twitter\",\"type\":\"Symbol\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"github\",\"name\":\"Github\",\"type\":\"Symbol\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"image\",\"name\":\"Image\",\"type\":\"Link\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false,\"linkType\":\"Asset\"}]}"
+        },
+        "requestId": "d8a8b234-212b-473f-81b6-00935fa6221d"
+      }
+    }
+  },
+  {
+    "ts": "2021-12-21T15:50:18.135Z",
+    "level": "error",
+    "error": {
+      "name": "InvalidEntry",
+      "entity": {
+        "metadata": {
+          "tags": [
+          ]
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gcqfm4imv6cj"
+            }
+          },
+          "id": "15jwOBqpxqSAOy2eOO4S0m",
+          "type": "Entry",
+          "createdAt": "2021-12-08T19:32:07.112Z",
+          "updatedAt": "2021-12-21T15:50:14.899Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 5,
+          "publishedAt": "2021-12-08T21:07:53.969Z",
+          "firstPublishedAt": "2021-12-08T19:32:16.914Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4htp9Joc6eTsULuS0Uhbei"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4htp9Joc6eTsULuS0Uhbei"
+            }
+          },
+          "publishedCounter": 3,
+          "version": 7,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4htp9Joc6eTsULuS0Uhbei"
+            }
+          },
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "person"
+            }
+          }
+        },
+        "fields": {
+          "name": {
+            "en-US": "John Doe"
+          },
+          "title": {
+            "en-US": "Web Developer"
+          },
+          "company": {
+            "en-US": "ACME"
+          },
+          "shortBio": {
+            "en-US": "Research and recommendations for modern stack websites."
+          },
+          "email": {
+            "en-US": "john@doe.com"
+          },
+          "phone": {
+            "en-US": "0176 / 1234567"
+          },
+          "facebook": {
+            "en-US": "johndoe"
+          },
+          "twitter": {
+            "en-US": "johndoe"
+          },
+          "github": {
+            "en-US": "johndoe"
+          },
+          "image": {
+            "en-US": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7orLdboQQowIUs22KAW4U"
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 422,
+        "statusText": "Unprocessable Entity",
+        "message": "Validation error",
+        "details": {
+          "errors": [
+            {
+              "name": "required",
+              "path": [
+                "fields",
+                "expertise"
+              ],
+              "details": "The property \"expertise\" is required here"
+            }
+          ]
+        },
+        "request": {
+          "url": "/spaces/gcqfm4imv6cj/environments/master/entries/15jwOBqpxqSAOy2eOO4S0m/published",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Authorization": "Bearer ...t704k",
+            "user-agent": "node.js/v16.13.1",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 7
+          },
+          "method": "put",
+          "payloadData": null
+        },
+        "requestId": "70c2e683-f299-4f5d-bee4-a49498cd8dbb"
+      }
+    }
+  },
+  {
+    "ts": "2021-12-21T15:50:19.764Z",
+    "level": "error",
+    "error": {
+      "name": "InvalidEntry",
+      "entity": {
+        "metadata": {
+          "tags": [
+          ]
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gcqfm4imv6cj"
+            }
+          },
+          "id": "15jwOBqpxqSAOy2eOO4S0m",
+          "type": "Entry",
+          "createdAt": "2021-12-08T19:32:07.112Z",
+          "updatedAt": "2021-12-21T15:50:14.899Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 5,
+          "publishedAt": "2021-12-08T21:07:53.969Z",
+          "firstPublishedAt": "2021-12-08T19:32:16.914Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4htp9Joc6eTsULuS0Uhbei"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4htp9Joc6eTsULuS0Uhbei"
+            }
+          },
+          "publishedCounter": 3,
+          "version": 7,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4htp9Joc6eTsULuS0Uhbei"
+            }
+          },
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "person"
+            }
+          }
+        },
+        "fields": {
+          "name": {
+            "en-US": "John Doe"
+          },
+          "title": {
+            "en-US": "Web Developer"
+          },
+          "company": {
+            "en-US": "ACME"
+          },
+          "shortBio": {
+            "en-US": "Research and recommendations for modern stack websites."
+          },
+          "email": {
+            "en-US": "john@doe.com"
+          },
+          "phone": {
+            "en-US": "0176 / 1234567"
+          },
+          "facebook": {
+            "en-US": "johndoe"
+          },
+          "twitter": {
+            "en-US": "johndoe"
+          },
+          "github": {
+            "en-US": "johndoe"
+          },
+          "image": {
+            "en-US": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7orLdboQQowIUs22KAW4U"
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 422,
+        "statusText": "Unprocessable Entity",
+        "message": "Validation error",
+        "details": {
+          "errors": [
+            {
+              "name": "required",
+              "path": [
+                "fields",
+                "expertise"
+              ],
+              "details": "The property \"expertise\" is required here"
+            }
+          ]
+        },
+        "request": {
+          "url": "/spaces/gcqfm4imv6cj/environments/master/entries/15jwOBqpxqSAOy2eOO4S0m/published",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Authorization": "Bearer ...t704k",
+            "user-agent": "node.js/v16.13.1",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 7
+          },
+          "method": "put",
+          "payloadData": null
+        },
+        "requestId": "4ad59c16-1769-4325-b6d7-87006bfa00ec"
+      }
+    }
+  },
+  {
+    "ts": "2021-12-21T15:50:19.764Z",
+    "level": "error",
+    "error": "Could not publish the following entities: Web Developer (15jwOBqpxqSAOy2eOO4S0m)"
+  }
+]
